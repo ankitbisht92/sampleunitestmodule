@@ -1,0 +1,11 @@
+important codes to be ran with terratest:
+go mod init <go_file_name>
+go mod tidy
+go get github.com/gruntwork-io/terratest/modules/azure
+go get github.com/gruntwork-io/terratest/modules/random
+go get github.com/gruntwork-io/terratest/modules/terraform
+
+az login (to set up initial connection)
+go fmt
+go test -v -run <function_name> -timeout 30m
+
